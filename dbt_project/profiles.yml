@@ -3,7 +3,6 @@ dbt_project:
     dev:
       account: sfseapac-jp_demo23
       database: dbt_hol_2025_dev
-      password: 
       role: dbt_hol_role_dev
       schema: public
       threads: 100
@@ -13,7 +12,6 @@ dbt_project:
     prod:
       account: sfseapac-jp_demo23
       database: dbt_hol_2025_prod
-      password: 
       role: dbt_hol_role_prod
       schema: public
       threads: 100
