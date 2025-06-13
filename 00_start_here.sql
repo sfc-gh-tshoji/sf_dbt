@@ -55,17 +55,28 @@ EXECUTE IMMEDIATE FROM
     USING (env => 'PROD')
 ;
 
+
 -- Step 03 Create TASK
 create or replace DBT PROJECT tshoji_db.tshoji_schema.dbt_quickstart 
-from snow://workspace/USER$.PUBLIC."sf_dbt"/versions/live/dbt;
+from snow://workspace/USER$.PUBLIC."sf_dbt"/versions/live/dbt_project/;
 
 desc DBT PROJECT tshoji_db.tshoji_schema.dbt_quickstart;
 
+EXECUTE DBT PROJECT tshoji_db.tshoji_schema.dbt_quickstart
+  args='seed --target prod';
+
+EXECUTE DBT PROJECT tshoji_db.tshoji_schema.dbt_quickstart
+  args='compile --target prod';
+
+EXECUTE DBT PROJECT tshoji_db.tshoji_schema.dbt_quickstart
+  args='run --target prod';
+  
 CREATE OR ALTER TASK tshoji_db.tshoji_schema.run_dbt_prod
   WAREHOUSE = tshoji_wh
   SCHEDULE = '1 hour'
 AS
-EXECUTE DBT PROJECT tshoji_db.tshoji_schema.dbt_quickstart_dev args='run --target prod';
+EXECUTE DBT PROJECT tshoji_db.tshoji_schema.dbt_quickstart
+  args='run --target prod';
 
 execute task tshoji_db.tshoji_schema.run_dbt_prod;
 
