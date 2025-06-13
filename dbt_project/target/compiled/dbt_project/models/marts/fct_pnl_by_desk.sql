@@ -1,5 +1,5 @@
 with trade_performance as (
-    select * from dbt_hol_2025_prod.public_02_intermediate.int_trade_pnl
+    select * from dbt_hol_2025_dev.public_02_intermediate.int_trade_pnl
 ),
 
 -- Calculate daily P&L metrics by desk and ticker

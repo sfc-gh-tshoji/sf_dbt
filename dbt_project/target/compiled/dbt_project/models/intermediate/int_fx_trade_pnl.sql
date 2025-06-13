@@ -1,10 +1,10 @@
 with trading_books as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_trading_books
+    select * from dbt_hol_2025_dev.public_01_staging.stg_trading_books
     where desk = 'FX Desk'
 ),
 
 forex_metrics as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_forex_metrics
+    select * from dbt_hol_2025_dev.public_01_staging.stg_forex_metrics
 ),
 
 -- Match BUY and SELL trades for the same ticker and trader

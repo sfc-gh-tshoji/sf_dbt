@@ -1,229 +1,207 @@
 
 
-============================== 14:18:19.591760 | 92998bea-931f-491c-8f5a-f48dd7104d5a ==============================
-[0m14:18:19.591760 [info ] [Dummy-1   ]: Running with dbt=1.9.4
-[0m14:18:19.592829 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/tmp/dbt_output/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': '/tmp/dbt_output/target/', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'False'}
-[0m14:18:19.955245 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
-[0m14:18:20.671774 [debug] [Dummy-1   ]: checksum: 6d8301ed5f8f0471e249cbcc8805b42bc5f78a9b258cb4e5c4b012c6ace116b4, vars: {}, profile: , target: prod, version: 1.9.4
-[0m14:18:20.673180 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
-[0m14:18:23.357599 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt_output/target/manifest.json
-[0m14:18:23.360200 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt_output/target/semantic_manifest.json
-[0m14:18:23.412304 [info ] [Dummy-1   ]: Found 11 models, 2 seeds, 10 data tests, 4 sources, 475 macros
-[0m14:18:23.415841 [info ] [Dummy-1   ]: 
-[0m14:18:23.416577 [info ] [Dummy-1   ]: Concurrency: 100 threads (target='prod')
-[0m14:18:23.417156 [info ] [Dummy-1   ]: 
-[0m14:18:23.417970 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
-[0m14:18:23.425894 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_hol_2025_prod'
-[0m14:18:23.427235 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_hol_2025_prod'
-[0m14:18:23.434678 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_hol_2025_prod'
-[0m14:18:23.558715 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod"
-[0m14:18:23.559532 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod"
-[0m14:18:23.560267 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod"
-[0m14:18:23.560883 [debug] [ThreadPool]: On list_dbt_hol_2025_prod: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod"} */
-show terse schemas in database dbt_hol_2025_prod
+============================== 11:22:09.945013 | 5cbc64d7-0106-4f56-9b58-71319740ef90 ==============================
+[0m11:22:09.945013 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m11:22:09.946025 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/tmp/dbt_output/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt ', 'target_path': '/tmp/dbt_output/target/', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m11:22:10.307229 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m11:22:11.030606 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m11:22:11.032085 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:22:13.672671 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt_output/target/manifest.json
+[0m11:22:13.675029 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt_output/target/semantic_manifest.json
+[0m11:22:13.726398 [info ] [Dummy-1   ]: Found 11 models, 2 seeds, 10 data tests, 4 sources, 475 macros
+[0m11:22:13.729868 [info ] [Dummy-1   ]: 
+[0m11:22:13.730584 [info ] [Dummy-1   ]: Concurrency: 100 threads (target='dev')
+[0m11:22:13.731162 [info ] [Dummy-1   ]: 
+[0m11:22:13.731959 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m11:22:13.739755 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_hol_2025_dev'
+[0m11:22:13.740970 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_hol_2025_dev'
+[0m11:22:13.747461 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_hol_2025_dev'
+[0m11:22:13.901810 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev"
+[0m11:22:13.902596 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev"
+[0m11:22:13.903344 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev"
+[0m11:22:13.904010 [debug] [ThreadPool]: On list_dbt_hol_2025_dev: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev"} */
+show terse schemas in database dbt_hol_2025_dev
     limit 10000
-[0m14:18:23.561464 [debug] [ThreadPool]: On list_dbt_hol_2025_prod: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod"} */
-show terse schemas in database dbt_hol_2025_prod
+[0m11:22:13.904624 [debug] [ThreadPool]: On list_dbt_hol_2025_dev: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev"} */
+show terse schemas in database dbt_hol_2025_dev
     limit 10000
-[0m14:18:23.562006 [debug] [ThreadPool]: On list_dbt_hol_2025_prod: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod"} */
-show terse schemas in database dbt_hol_2025_prod
+[0m11:22:13.905238 [debug] [ThreadPool]: On list_dbt_hol_2025_dev: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev"} */
+show terse schemas in database dbt_hol_2025_dev
     limit 10000
-[0m14:18:23.562549 [debug] [ThreadPool]: Opening a new connection, currently in state init
-[0m14:18:23.563061 [debug] [ThreadPool]: Opening a new connection, currently in state init
-[0m14:18:23.563561 [debug] [ThreadPool]: Opening a new connection, currently in state init
-[0m14:18:23.795432 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.233 seconds
-[0m14:18:23.800460 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.237 seconds
-[0m14:18:23.812154 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.248 seconds
-[0m14:18:23.814828 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_prod, now create_dbt_hol_2025_prod_public_02_intermediate)
-[0m14:18:23.815496 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_prod, now create_dbt_hol_2025_prod_public_03_marts)
-[0m14:18:23.816101 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_prod, now create_dbt_hol_2025_prod_public_01_staging)
-[0m14:18:23.816837 [debug] [ThreadPool]: Creating schema "database: "dbt_hol_2025_prod"
-schema: "public_02_intermediate"
-"
-[0m14:18:23.817682 [debug] [ThreadPool]: Creating schema "database: "dbt_hol_2025_prod"
-schema: "public_03_marts"
-"
-[0m14:18:23.818438 [debug] [ThreadPool]: Creating schema "database: "dbt_hol_2025_prod"
+[0m11:22:13.905826 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:13.906404 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:13.907111 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:14.082057 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.176 seconds
+[0m11:22:14.083037 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.177 seconds
+[0m11:22:14.095317 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.188 seconds
+[0m11:22:14.097574 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_dev, now create_dbt_hol_2025_dev_public_01_staging)
+[0m11:22:14.098243 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_dev, now create_dbt_hol_2025_dev_public_03_marts)
+[0m11:22:14.098854 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_dev, now create_dbt_hol_2025_dev_public_02_intermediate)
+[0m11:22:14.099579 [debug] [ThreadPool]: Creating schema "database: "dbt_hol_2025_dev"
 schema: "public_01_staging"
 "
-[0m14:18:23.991820 [debug] [ThreadPool]: Using snowflake connection "create_dbt_hol_2025_prod_public_02_intermediate"
-[0m14:18:24.001876 [debug] [ThreadPool]: Using snowflake connection "create_dbt_hol_2025_prod_public_03_marts"
-[0m14:18:24.013478 [debug] [ThreadPool]: Using snowflake connection "create_dbt_hol_2025_prod_public_01_staging"
-[0m14:18:24.014120 [debug] [ThreadPool]: On create_dbt_hol_2025_prod_public_02_intermediate: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "create_dbt_hol_2025_prod_public_02_intermediate"} */
-create schema if not exists dbt_hol_2025_prod.public_02_intermediate
-[0m14:18:24.014686 [debug] [ThreadPool]: On create_dbt_hol_2025_prod_public_03_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "create_dbt_hol_2025_prod_public_03_marts"} */
-create schema if not exists dbt_hol_2025_prod.public_03_marts
-[0m14:18:24.015316 [debug] [ThreadPool]: On create_dbt_hol_2025_prod_public_01_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "create_dbt_hol_2025_prod_public_01_staging"} */
-create schema if not exists dbt_hol_2025_prod.public_01_staging
-[0m14:18:24.015897 [debug] [ThreadPool]: Opening a new connection, currently in state init
-[0m14:18:24.016445 [debug] [ThreadPool]: Opening a new connection, currently in state init
-[0m14:18:24.016958 [debug] [ThreadPool]: Opening a new connection, currently in state init
-[0m14:18:24.123191 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.107 seconds
-[0m14:18:24.173014 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.156 seconds
-[0m14:18:24.195691 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.179 seconds
-[0m14:18:24.200021 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dbt_hol_2025_prod_public_02_intermediate, now list_dbt_hol_2025_prod_public_02_intermediate)
-[0m14:18:24.201173 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dbt_hol_2025_prod_public_03_marts, now list_dbt_hol_2025_prod_public_03_marts)
-[0m14:18:24.202210 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dbt_hol_2025_prod_public_01_staging, now list_dbt_hol_2025_prod_public)
-[0m14:18:24.209593 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_hol_2025_prod_public_01_staging'
-[0m14:18:24.226372 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_02_intermediate"
-[0m14:18:24.238647 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_03_marts"
-[0m14:18:24.248749 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public"
-[0m14:18:24.260360 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_01_staging"
-[0m14:18:24.260979 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_02_intermediate: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_02_intermediate"} */
+[0m11:22:14.100282 [debug] [ThreadPool]: Creating schema "database: "dbt_hol_2025_dev"
+schema: "public_03_marts"
+"
+[0m11:22:14.100967 [debug] [ThreadPool]: Creating schema "database: "dbt_hol_2025_dev"
+schema: "public_02_intermediate"
+"
+[0m11:22:14.257431 [debug] [ThreadPool]: Using snowflake connection "create_dbt_hol_2025_dev_public_01_staging"
+[0m11:22:14.267152 [debug] [ThreadPool]: Using snowflake connection "create_dbt_hol_2025_dev_public_03_marts"
+[0m11:22:14.278280 [debug] [ThreadPool]: Using snowflake connection "create_dbt_hol_2025_dev_public_02_intermediate"
+[0m11:22:14.278952 [debug] [ThreadPool]: On create_dbt_hol_2025_dev_public_01_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_dbt_hol_2025_dev_public_01_staging"} */
+create schema if not exists dbt_hol_2025_dev.public_01_staging
+[0m11:22:14.279541 [debug] [ThreadPool]: On create_dbt_hol_2025_dev_public_03_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_dbt_hol_2025_dev_public_03_marts"} */
+create schema if not exists dbt_hol_2025_dev.public_03_marts
+[0m11:22:14.280129 [debug] [ThreadPool]: On create_dbt_hol_2025_dev_public_02_intermediate: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_dbt_hol_2025_dev_public_02_intermediate"} */
+create schema if not exists dbt_hol_2025_dev.public_02_intermediate
+[0m11:22:14.280676 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:14.281214 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:14.281701 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:14.354998 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.073 seconds
+[0m11:22:14.362225 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.081 seconds
+[0m11:22:14.380627 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.099 seconds
+[0m11:22:14.385768 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dbt_hol_2025_dev_public_03_marts, now list_dbt_hol_2025_dev_public_01_staging)
+[0m11:22:14.386776 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dbt_hol_2025_dev_public_01_staging, now list_dbt_hol_2025_dev_public_03_marts)
+[0m11:22:14.387793 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dbt_hol_2025_dev_public_02_intermediate, now list_dbt_hol_2025_dev_public)
+[0m11:22:14.394568 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_hol_2025_dev_public_02_intermediate'
+[0m11:22:14.411325 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_01_staging"
+[0m11:22:14.423186 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_03_marts"
+[0m11:22:14.432996 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public"
+[0m11:22:14.444127 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_02_intermediate"
+[0m11:22:14.444713 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_01_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_01_staging"} */
 alter session set quoted_identifiers_ignore_case = false;
-[0m14:18:24.261533 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_03_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_03_marts"} */
+[0m11:22:14.445257 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_03_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_03_marts"} */
 alter session set quoted_identifiers_ignore_case = false;
-[0m14:18:24.262082 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public"} */
+[0m11:22:14.445789 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public"} */
 alter session set quoted_identifiers_ignore_case = false;
-[0m14:18:24.262610 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_01_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_01_staging"} */
+[0m11:22:14.446326 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_02_intermediate: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_02_intermediate"} */
 alter session set quoted_identifiers_ignore_case = false;
-[0m14:18:24.263114 [debug] [ThreadPool]: Opening a new connection, currently in state init
-[0m14:18:24.263616 [debug] [ThreadPool]: Opening a new connection, currently in state init
-[0m14:18:24.264114 [debug] [ThreadPool]: Opening a new connection, currently in state init
-[0m14:18:24.264603 [debug] [ThreadPool]: Opening a new connection, currently in state init
-[0m14:18:24.368417 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.105 seconds
-[0m14:18:24.374806 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_02_intermediate"
-[0m14:18:24.375452 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_02_intermediate: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_02_intermediate"} */
-show objects in dbt_hol_2025_prod.public_02_intermediate
+[0m11:22:14.446838 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:14.447335 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:14.447800 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:14.448373 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:14.499708 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.051 seconds
+[0m11:22:14.505966 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_02_intermediate"
+[0m11:22:14.506545 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_02_intermediate: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_02_intermediate"} */
+show objects in dbt_hol_2025_dev.public_02_intermediate
     limit 10000
     
 ;
-[0m14:18:24.380163 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.116 seconds
-[0m14:18:24.382879 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public"
-[0m14:18:24.383421 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public"} */
-show objects in dbt_hol_2025_prod.public
+[0m11:22:14.556227 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.108 seconds
+[0m11:22:14.558981 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public"
+[0m11:22:14.559510 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public"} */
+show objects in dbt_hol_2025_dev.public
     limit 10000
     
 ;
-[0m14:18:24.455291 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.190 seconds
-[0m14:18:24.458135 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_01_staging"
-[0m14:18:24.458723 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_01_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_01_staging"} */
-show objects in dbt_hol_2025_prod.public_01_staging
+[0m11:22:14.566147 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.119 seconds
+[0m11:22:14.568757 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_03_marts"
+[0m11:22:14.569281 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_03_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_03_marts"} */
+show objects in dbt_hol_2025_dev.public_03_marts
     limit 10000
     
 ;
-[0m14:18:24.473348 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.210 seconds
-[0m14:18:24.476180 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_03_marts"
-[0m14:18:24.476758 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_03_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_03_marts"} */
-show objects in dbt_hol_2025_prod.public_03_marts
+[0m11:22:14.585737 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.139 seconds
+[0m11:22:14.588324 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_01_staging"
+[0m11:22:14.588867 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_01_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_01_staging"} */
+show objects in dbt_hol_2025_dev.public_01_staging
     limit 10000
     
 ;
-[0m14:18:24.568836 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.193 seconds
-[0m14:18:24.569947 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.186 seconds
-[0m14:18:24.570579 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_02_intermediate"
-[0m14:18:24.571226 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public"
-[0m14:18:24.571845 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_02_intermediate: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_02_intermediate"} */
+[0m11:22:14.616323 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.109 seconds
+[0m11:22:14.616965 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_02_intermediate"
+[0m11:22:14.617519 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_02_intermediate: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_02_intermediate"} */
 select all_objects.*, all_tables.IS_ICEBERG as "is_iceberg"
 from table(result_scan(last_query_id(-1))) all_objects
-left join dbt_hol_2025_prod.INFORMATION_SCHEMA.tables as all_tables
+left join dbt_hol_2025_dev.INFORMATION_SCHEMA.tables as all_tables
 on all_tables.table_name = all_objects."name"
 and all_tables.table_schema = all_objects."schema_name"
 and all_tables.table_catalog = all_objects."database_name"
 ;
-[0m14:18:24.572453 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public"} */
+[0m11:22:14.661750 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.072 seconds
+[0m11:22:14.662375 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_01_staging"
+[0m11:22:14.662934 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_01_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_01_staging"} */
 select all_objects.*, all_tables.IS_ICEBERG as "is_iceberg"
 from table(result_scan(last_query_id(-1))) all_objects
-left join dbt_hol_2025_prod.INFORMATION_SCHEMA.tables as all_tables
+left join dbt_hol_2025_dev.INFORMATION_SCHEMA.tables as all_tables
 on all_tables.table_name = all_objects."name"
 and all_tables.table_schema = all_objects."schema_name"
 and all_tables.table_catalog = all_objects."database_name"
 ;
-[0m14:18:24.579553 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.120 seconds
-[0m14:18:24.580187 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_01_staging"
-[0m14:18:24.580743 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_01_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_01_staging"} */
+[0m11:22:14.667806 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.098 seconds
+[0m11:22:14.668444 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_03_marts"
+[0m11:22:14.669045 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_03_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_03_marts"} */
 select all_objects.*, all_tables.IS_ICEBERG as "is_iceberg"
 from table(result_scan(last_query_id(-1))) all_objects
-left join dbt_hol_2025_prod.INFORMATION_SCHEMA.tables as all_tables
+left join dbt_hol_2025_dev.INFORMATION_SCHEMA.tables as all_tables
 on all_tables.table_name = all_objects."name"
 and all_tables.table_schema = all_objects."schema_name"
 and all_tables.table_catalog = all_objects."database_name"
 ;
-[0m14:18:24.599940 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.123 seconds
-[0m14:18:24.600574 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_03_marts"
-[0m14:18:24.601113 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_03_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_03_marts"} */
+[0m11:22:14.670102 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.110 seconds
+[0m11:22:14.671092 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public"
+[0m11:22:14.671632 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public"} */
 select all_objects.*, all_tables.IS_ICEBERG as "is_iceberg"
 from table(result_scan(last_query_id(-1))) all_objects
-left join dbt_hol_2025_prod.INFORMATION_SCHEMA.tables as all_tables
+left join dbt_hol_2025_dev.INFORMATION_SCHEMA.tables as all_tables
 on all_tables.table_name = all_objects."name"
 and all_tables.table_schema = all_objects."schema_name"
 and all_tables.table_catalog = all_objects."database_name"
 ;
-[0m14:18:25.405745 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.804 seconds
-[0m14:18:25.408112 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_03_marts"
-[0m14:18:25.408681 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_03_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_03_marts"} */
+[0m11:22:15.358080 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.740 seconds
+[0m11:22:15.360419 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_02_intermediate"
+[0m11:22:15.361004 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_02_intermediate: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_02_intermediate"} */
 alter session unset quoted_identifiers_ignore_case;
-[0m14:18:25.431169 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.850 seconds
-[0m14:18:25.433516 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_01_staging"
-[0m14:18:25.434084 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_01_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_01_staging"} */
+[0m11:22:15.408368 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.047 seconds
+[0m11:22:15.454081 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.783 seconds
+[0m11:22:15.455102 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.783 seconds
+[0m11:22:15.455982 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.793 seconds
+[0m11:22:15.458703 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_03_marts"
+[0m11:22:15.461065 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public"
+[0m11:22:15.463394 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_dev_public_01_staging"
+[0m11:22:15.463960 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_03_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_03_marts"} */
 alter session unset quoted_identifiers_ignore_case;
-[0m14:18:25.435351 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.862 seconds
-[0m14:18:25.437740 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public_02_intermediate"
-[0m14:18:25.438287 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public_02_intermediate: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public_02_intermediate"} */
+[0m11:22:15.464487 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public"} */
 alter session unset quoted_identifiers_ignore_case;
-[0m14:18:25.445410 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.872 seconds
-[0m14:18:25.447659 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_2025_prod_public"
-[0m14:18:25.448223 [debug] [ThreadPool]: On list_dbt_hol_2025_prod_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "connection_name": "list_dbt_hol_2025_prod_public"} */
+[0m11:22:15.465049 [debug] [ThreadPool]: On list_dbt_hol_2025_dev_public_01_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_hol_2025_dev_public_01_staging"} */
 alter session unset quoted_identifiers_ignore_case;
-[0m14:18:25.489854 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.080 seconds
-[0m14:18:25.509780 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.071 seconds
-[0m14:18:25.545654 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.097 seconds
-[0m14:18:25.558211 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.123 seconds
-[0m14:18:25.591738 [debug] [Thread-2 (]: Began running node model.dbt_project.stg_forex_metrics
-[0m14:18:25.592623 [debug] [Thread-3 (]: Began running node model.dbt_project.stg_stock_metrics
-[0m14:18:25.593381 [debug] [Thread-4 (]: Began running node model.dbt_project.stg_trading_books
-[0m14:18:25.594117 [debug] [Thread-5 (]: Began running node model.dbt_project.stg_weights
-[0m14:18:25.595176 [info ] [Thread-2 (]: 1 of 11 START sql table model public_01_staging.stg_forex_metrics .............. [RUN]
-[0m14:18:25.596203 [info ] [Thread-3 (]: 2 of 11 START sql table model public_01_staging.stg_stock_metrics .............. [RUN]
-[0m14:18:25.597166 [info ] [Thread-4 (]: 3 of 11 START sql table model public_01_staging.stg_trading_books .............. [RUN]
-[0m14:18:25.598193 [info ] [Thread-5 (]: 4 of 11 START sql table model public_01_staging.stg_weights .................... [RUN]
-[0m14:18:25.598995 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_prod_public_02_intermediate, now model.dbt_project.stg_forex_metrics)
-[0m14:18:25.599622 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_prod_public, now model.dbt_project.stg_stock_metrics)
-[0m14:18:25.600255 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_prod_public_01_staging, now model.dbt_project.stg_trading_books)
-[0m14:18:25.600878 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_prod_public_03_marts, now model.dbt_project.stg_weights)
-[0m14:18:25.601513 [debug] [Thread-2 (]: Began compiling node model.dbt_project.stg_forex_metrics
-[0m14:18:25.602089 [debug] [Thread-3 (]: Began compiling node model.dbt_project.stg_stock_metrics
-[0m14:18:25.602645 [debug] [Thread-4 (]: Began compiling node model.dbt_project.stg_trading_books
-[0m14:18:25.603192 [debug] [Thread-5 (]: Began compiling node model.dbt_project.stg_weights
-[0m14:18:25.621734 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_project.stg_forex_metrics"
-[0m14:18:25.632910 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_project.stg_stock_metrics"
-[0m14:18:25.644067 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_project.stg_trading_books"
-[0m14:18:25.657021 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_project.stg_weights"
-[0m14:18:25.658989 [debug] [Thread-2 (]: Began executing node model.dbt_project.stg_forex_metrics
-[0m14:18:25.659740 [debug] [Thread-3 (]: Began executing node model.dbt_project.stg_stock_metrics
-[0m14:18:25.660393 [debug] [Thread-4 (]: Began executing node model.dbt_project.stg_trading_books
-[0m14:18:25.682472 [debug] [Thread-5 (]: Began executing node model.dbt_project.stg_weights
-[0m14:18:25.728567 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_project.stg_forex_metrics"
-[0m14:18:25.741920 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_project.stg_stock_metrics"
-[0m14:18:25.752679 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_project.stg_trading_books"
-[0m14:18:25.764625 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_project.stg_weights"
-[0m14:18:25.767403 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_project.stg_forex_metrics"
-[0m14:18:25.768863 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_project.stg_stock_metrics"
-[0m14:18:25.770408 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_project.stg_trading_books"
-[0m14:18:25.771185 [debug] [Thread-2 (]: On model.dbt_project.stg_forex_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.stg_forex_metrics"} */
-create or replace transient table dbt_hol_2025_prod.public_01_staging.stg_forex_metrics
-         as
-        (with source as (
-    select * from FOREX_TRACKING_CURRENCY_EXCHANGE_RATES_BY_DAY.STOCK.FOREX_METRICS
-),
-renamed as (
-    select
-        run_date,
-        currency_pair_name,
-        open as open_rate,
-        high as high_rate,
-        low as low_rate,
-        close as close_rate
-    from source   
-)
-
-select * from renamed 
-where 1=1 
-  AND run_date >= '2024-01-01'
-        );
-[0m14:18:25.772454 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_project.stg_weights"
-[0m14:18:25.773084 [debug] [Thread-3 (]: On model.dbt_project.stg_stock_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.stg_stock_metrics"} */
-create or replace transient table dbt_hol_2025_prod.public_01_staging.stg_stock_metrics
+[0m11:22:15.510231 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.044 seconds
+[0m11:22:15.511087 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.046 seconds
+[0m11:22:15.511871 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.046 seconds
+[0m11:22:15.552910 [debug] [Thread-2 (]: Began running node model.dbt_project.stg_forex_metrics
+[0m11:22:15.553679 [debug] [Thread-3 (]: Began running node model.dbt_project.stg_stock_metrics
+[0m11:22:15.554398 [debug] [Thread-4 (]: Began running node model.dbt_project.stg_trading_books
+[0m11:22:15.555118 [debug] [Thread-5 (]: Began running node model.dbt_project.stg_weights
+[0m11:22:15.556103 [info ] [Thread-2 (]: 1 of 11 START sql table model public_01_staging.stg_forex_metrics .............. [RUN]
+[0m11:22:15.557017 [info ] [Thread-3 (]: 2 of 11 START sql table model public_01_staging.stg_stock_metrics .............. [RUN]
+[0m11:22:15.557967 [info ] [Thread-4 (]: 3 of 11 START sql table model public_01_staging.stg_trading_books .............. [RUN]
+[0m11:22:15.558992 [info ] [Thread-5 (]: 4 of 11 START sql table model public_01_staging.stg_weights .................... [RUN]
+[0m11:22:15.559760 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_dev_public_01_staging, now model.dbt_project.stg_forex_metrics)
+[0m11:22:15.560367 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_dev_public_03_marts, now model.dbt_project.stg_stock_metrics)
+[0m11:22:15.560969 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_dev_public, now model.dbt_project.stg_trading_books)
+[0m11:22:15.561567 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly list_dbt_hol_2025_dev_public_02_intermediate, now model.dbt_project.stg_weights)
+[0m11:22:15.562143 [debug] [Thread-2 (]: Began compiling node model.dbt_project.stg_forex_metrics
+[0m11:22:15.562713 [debug] [Thread-3 (]: Began compiling node model.dbt_project.stg_stock_metrics
+[0m11:22:15.563247 [debug] [Thread-4 (]: Began compiling node model.dbt_project.stg_trading_books
+[0m11:22:15.563779 [debug] [Thread-5 (]: Began compiling node model.dbt_project.stg_weights
+[0m11:22:15.581731 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_project.stg_forex_metrics"
+[0m11:22:15.592468 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_project.stg_stock_metrics"
+[0m11:22:15.603268 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_project.stg_trading_books"
+[0m11:22:15.615790 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_project.stg_weights"
+[0m11:22:15.617712 [debug] [Thread-3 (]: Began executing node model.dbt_project.stg_stock_metrics
+[0m11:22:15.618439 [debug] [Thread-2 (]: Began executing node model.dbt_project.stg_forex_metrics
+[0m11:22:15.618990 [debug] [Thread-4 (]: Began executing node model.dbt_project.stg_trading_books
+[0m11:22:15.630712 [debug] [Thread-5 (]: Began executing node model.dbt_project.stg_weights
+[0m11:22:15.684741 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_project.stg_stock_metrics"
+[0m11:22:15.697166 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_project.stg_forex_metrics"
+[0m11:22:15.707559 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_project.stg_trading_books"
+[0m11:22:15.718989 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_project.stg_weights"
+[0m11:22:15.721596 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_project.stg_stock_metrics"
+[0m11:22:15.723130 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_project.stg_forex_metrics"
+[0m11:22:15.724552 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_project.stg_trading_books"
+[0m11:22:15.725300 [debug] [Thread-3 (]: On model.dbt_project.stg_stock_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_stock_metrics"} */
+create or replace transient table dbt_hol_2025_dev.public_01_staging.stg_stock_metrics
          as
         (with source as (
     select * from STOCK_TRACKING_US_STOCK_PRICES_BY_DAY.STOCK.US_STOCK_METRICS
@@ -245,11 +223,33 @@ select * from renamed
 where 1=1 
   AND run_date >= '2024-01-01'
         );
-[0m14:18:25.773743 [debug] [Thread-4 (]: On model.dbt_project.stg_trading_books: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.stg_trading_books"} */
-create or replace transient table dbt_hol_2025_prod.public_01_staging.stg_trading_books
+[0m11:22:15.726503 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_project.stg_weights"
+[0m11:22:15.727133 [debug] [Thread-2 (]: On model.dbt_project.stg_forex_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_forex_metrics"} */
+create or replace transient table dbt_hol_2025_dev.public_01_staging.stg_forex_metrics
          as
         (with source as (
-    select * from dbt_hol_2025_prod.public.trading_books
+    select * from FOREX_TRACKING_CURRENCY_EXCHANGE_RATES_BY_DAY.STOCK.FOREX_METRICS
+),
+renamed as (
+    select
+        run_date,
+        currency_pair_name,
+        open as open_rate,
+        high as high_rate,
+        low as low_rate,
+        close as close_rate
+    from source   
+)
+
+select * from renamed 
+where 1=1 
+  AND run_date >= '2024-01-01'
+        );
+[0m11:22:15.727805 [debug] [Thread-4 (]: On model.dbt_project.stg_trading_books: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_trading_books"} */
+create or replace transient table dbt_hol_2025_dev.public_01_staging.stg_trading_books
+         as
+        (with source as (
+    select * from dbt_hol_2025_dev.public.trading_books
 ),
 
 renamed as (
@@ -268,13 +268,13 @@ renamed as (
 
 select * from renamed
         );
-[0m14:18:25.774372 [debug] [Thread-2 (]: Opening a new connection, currently in state init
-[0m14:18:25.774974 [debug] [Thread-5 (]: On model.dbt_project.stg_weights: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.stg_weights"} */
-create or replace transient table dbt_hol_2025_prod.public_01_staging.stg_weights
+[0m11:22:15.728561 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:22:15.729183 [debug] [Thread-5 (]: On model.dbt_project.stg_weights: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_weights"} */
+create or replace transient table dbt_hol_2025_dev.public_01_staging.stg_weights
          as
         (with source as (
     select *
-    from dbt_hol_2025_prod.public.weights_table
+    from dbt_hol_2025_dev.public.weights_table
 ),
 renamed as (
     select region,
@@ -285,35 +285,35 @@ renamed as (
 select *
 from renamed
         );
-[0m14:18:25.775596 [debug] [Thread-3 (]: Opening a new connection, currently in state init
-[0m14:18:25.776160 [debug] [Thread-4 (]: Opening a new connection, currently in state init
-[0m14:18:25.777281 [debug] [Thread-5 (]: Opening a new connection, currently in state init
-[0m14:18:27.159360 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.383 seconds
-[0m14:18:27.194551 [info ] [Thread-4 (]: 3 of 11 OK created sql table model public_01_staging.stg_trading_books ......... [[32mSUCCESS 1[0m in 1.59s]
-[0m14:18:27.195610 [debug] [Thread-4 (]: Finished running node model.dbt_project.stg_trading_books
-[0m14:18:27.197264 [debug] [Thread-7 (]: Began running node model.dbt_project.int_extracted_entities
-[0m14:18:27.198278 [info ] [Thread-7 (]: 5 of 11 START sql dynamic_table model public_02_intermediate.int_extracted_entities  [RUN]
-[0m14:18:27.199179 [debug] [Thread-7 (]: Acquiring new snowflake connection 'model.dbt_project.int_extracted_entities'
-[0m14:18:27.199747 [debug] [Thread-7 (]: Began compiling node model.dbt_project.int_extracted_entities
-[0m14:18:27.217540 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.440 seconds
-[0m14:18:27.218004 [debug] [Thread-7 (]: Writing injected SQL for node "model.dbt_project.int_extracted_entities"
-[0m14:18:27.221512 [info ] [Thread-5 (]: 4 of 11 OK created sql table model public_01_staging.stg_weights ............... [[32mSUCCESS 1[0m in 1.62s]
-[0m14:18:27.222998 [debug] [Thread-5 (]: Finished running node model.dbt_project.stg_weights
-[0m14:18:27.224530 [debug] [Thread-7 (]: Began executing node model.dbt_project.int_extracted_entities
-[0m14:18:27.236573 [debug] [Thread-7 (]: Using snowflake connection "model.dbt_project.int_extracted_entities"
-[0m14:18:27.237295 [debug] [Thread-7 (]: On model.dbt_project.int_extracted_entities: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_extracted_entities"} */
+[0m11:22:15.729760 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:22:15.730323 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:22:15.731431 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:22:16.437981 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.706 seconds
+[0m11:22:16.466481 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.736 seconds
+[0m11:22:16.477702 [info ] [Thread-5 (]: 4 of 11 OK created sql table model public_01_staging.stg_weights ............... [[32mSUCCESS 1[0m in 0.91s]
+[0m11:22:16.478880 [info ] [Thread-4 (]: 3 of 11 OK created sql table model public_01_staging.stg_trading_books ......... [[32mSUCCESS 1[0m in 0.92s]
+[0m11:22:16.479878 [debug] [Thread-5 (]: Finished running node model.dbt_project.stg_weights
+[0m11:22:16.480760 [debug] [Thread-4 (]: Finished running node model.dbt_project.stg_trading_books
+[0m11:22:16.482794 [debug] [Thread-7 (]: Began running node model.dbt_project.int_extracted_entities
+[0m11:22:16.483743 [info ] [Thread-7 (]: 5 of 11 START sql dynamic_table model public_02_intermediate.int_extracted_entities  [RUN]
+[0m11:22:16.484584 [debug] [Thread-7 (]: Acquiring new snowflake connection 'model.dbt_project.int_extracted_entities'
+[0m11:22:16.485141 [debug] [Thread-7 (]: Began compiling node model.dbt_project.int_extracted_entities
+[0m11:22:16.497477 [debug] [Thread-7 (]: Writing injected SQL for node "model.dbt_project.int_extracted_entities"
+[0m11:22:16.498641 [debug] [Thread-7 (]: Began executing node model.dbt_project.int_extracted_entities
+[0m11:22:16.510513 [debug] [Thread-7 (]: Using snowflake connection "model.dbt_project.int_extracted_entities"
+[0m11:22:16.511427 [debug] [Thread-7 (]: On model.dbt_project.int_extracted_entities: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_extracted_entities"} */
 select current_warehouse() as warehouse
-[0m14:18:27.237853 [debug] [Thread-7 (]: Opening a new connection, currently in state init
-[0m14:18:27.347119 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 0.109 seconds
-[0m14:18:27.350246 [debug] [Thread-7 (]: Using snowflake connection "model.dbt_project.int_extracted_entities"
-[0m14:18:27.350965 [debug] [Thread-7 (]: On model.dbt_project.int_extracted_entities: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_extracted_entities"} */
+[0m11:22:16.511991 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m11:22:16.566061 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 0.054 seconds
+[0m11:22:16.568553 [debug] [Thread-7 (]: Using snowflake connection "model.dbt_project.int_extracted_entities"
+[0m11:22:16.569244 [debug] [Thread-7 (]: On model.dbt_project.int_extracted_entities: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_extracted_entities"} */
 use warehouse VWH_DBT_HOL
-[0m14:18:27.474157 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 0.122 seconds
-[0m14:18:27.525047 [debug] [Thread-7 (]: Applying CREATE to: dbt_hol_2025_prod.public_02_intermediate.int_extracted_entities
-[0m14:18:27.539717 [debug] [Thread-7 (]: Writing runtime sql for node "model.dbt_project.int_extracted_entities"
-[0m14:18:27.542053 [debug] [Thread-7 (]: Using snowflake connection "model.dbt_project.int_extracted_entities"
-[0m14:18:27.542816 [debug] [Thread-7 (]: On model.dbt_project.int_extracted_entities: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_extracted_entities"} */
-create dynamic table dbt_hol_2025_prod.public_02_intermediate.int_extracted_entities
+[0m11:22:16.619728 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 0.050 seconds
+[0m11:22:16.643292 [debug] [Thread-7 (]: Applying CREATE to: dbt_hol_2025_dev.public_02_intermediate.int_extracted_entities
+[0m11:22:16.657080 [debug] [Thread-7 (]: Writing runtime sql for node "model.dbt_project.int_extracted_entities"
+[0m11:22:16.659576 [debug] [Thread-7 (]: Using snowflake connection "model.dbt_project.int_extracted_entities"
+[0m11:22:16.660340 [debug] [Thread-7 (]: On model.dbt_project.int_extracted_entities: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_extracted_entities"} */
+create dynamic table dbt_hol_2025_dev.public_02_intermediate.int_extracted_entities
         target_lag = 'downstream'
         warehouse = VWH_DBT_HOL
         refresh_mode = FULL
@@ -324,7 +324,7 @@ create dynamic table dbt_hol_2025_prod.public_02_intermediate.int_extracted_enti
             
 
 with trading_books as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_trading_books
+    select * from dbt_hol_2025_dev.public_01_staging.stg_trading_books
 ),
 
 -- Extract sentiment using SNOWFLAKE.CORTEX.SENTIMENT
@@ -347,46 +347,29 @@ cst as (
 )
 select * from cst
         )
-[0m14:18:28.381462 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.607 seconds
-[0m14:18:28.384967 [info ] [Thread-2 (]: 1 of 11 OK created sql table model public_01_staging.stg_forex_metrics ......... [[32mSUCCESS 1[0m in 2.79s]
-[0m14:18:28.385937 [debug] [Thread-2 (]: Finished running node model.dbt_project.stg_forex_metrics
-[0m14:18:28.387543 [debug] [Thread-9 (]: Began running node model.dbt_project.int_fx_trade_pnl
-[0m14:18:28.388545 [info ] [Thread-9 (]: 6 of 11 START sql dynamic_table model public_02_intermediate.int_fx_trade_pnl .. [RUN]
-[0m14:18:28.389383 [debug] [Thread-9 (]: Acquiring new snowflake connection 'model.dbt_project.int_fx_trade_pnl'
-[0m14:18:28.389938 [debug] [Thread-9 (]: Began compiling node model.dbt_project.int_fx_trade_pnl
-[0m14:18:28.402209 [debug] [Thread-9 (]: Writing injected SQL for node "model.dbt_project.int_fx_trade_pnl"
-[0m14:18:28.403053 [debug] [Thread-9 (]: Began executing node model.dbt_project.int_fx_trade_pnl
-[0m14:18:28.414424 [debug] [Thread-9 (]: Using snowflake connection "model.dbt_project.int_fx_trade_pnl"
-[0m14:18:28.415078 [debug] [Thread-9 (]: On model.dbt_project.int_fx_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_fx_trade_pnl"} */
+[0m11:22:17.366912 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.637 seconds
+[0m11:22:17.370370 [info ] [Thread-2 (]: 1 of 11 OK created sql table model public_01_staging.stg_forex_metrics ......... [[32mSUCCESS 1[0m in 1.81s]
+[0m11:22:17.371284 [debug] [Thread-2 (]: Finished running node model.dbt_project.stg_forex_metrics
+[0m11:22:17.372869 [debug] [Thread-9 (]: Began running node model.dbt_project.int_fx_trade_pnl
+[0m11:22:17.373797 [info ] [Thread-9 (]: 6 of 11 START sql dynamic_table model public_02_intermediate.int_fx_trade_pnl .. [RUN]
+[0m11:22:17.374627 [debug] [Thread-9 (]: Acquiring new snowflake connection 'model.dbt_project.int_fx_trade_pnl'
+[0m11:22:17.375184 [debug] [Thread-9 (]: Began compiling node model.dbt_project.int_fx_trade_pnl
+[0m11:22:17.387219 [debug] [Thread-9 (]: Writing injected SQL for node "model.dbt_project.int_fx_trade_pnl"
+[0m11:22:17.388089 [debug] [Thread-9 (]: Began executing node model.dbt_project.int_fx_trade_pnl
+[0m11:22:17.399083 [debug] [Thread-9 (]: Using snowflake connection "model.dbt_project.int_fx_trade_pnl"
+[0m11:22:17.399677 [debug] [Thread-9 (]: On model.dbt_project.int_fx_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_fx_trade_pnl"} */
 select current_warehouse() as warehouse
-[0m14:18:28.415656 [debug] [Thread-9 (]: Opening a new connection, currently in state init
-[0m14:18:28.458557 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.683 seconds
-[0m14:18:28.461951 [info ] [Thread-3 (]: 2 of 11 OK created sql table model public_01_staging.stg_stock_metrics ......... [[32mSUCCESS 1[0m in 2.86s]
-[0m14:18:28.462859 [debug] [Thread-3 (]: Finished running node model.dbt_project.stg_stock_metrics
-[0m14:18:28.464311 [debug] [Thread-11 ]: Began running node model.dbt_project.int_equity_trade_pnl
-[0m14:18:28.465281 [info ] [Thread-11 ]: 7 of 11 START sql dynamic_table model public_02_intermediate.int_equity_trade_pnl  [RUN]
-[0m14:18:28.466119 [debug] [Thread-11 ]: Acquiring new snowflake connection 'model.dbt_project.int_equity_trade_pnl'
-[0m14:18:28.466671 [debug] [Thread-11 ]: Began compiling node model.dbt_project.int_equity_trade_pnl
-[0m14:18:28.478867 [debug] [Thread-11 ]: Writing injected SQL for node "model.dbt_project.int_equity_trade_pnl"
-[0m14:18:28.479919 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 0.064 seconds
-[0m14:18:28.482308 [debug] [Thread-9 (]: Using snowflake connection "model.dbt_project.int_fx_trade_pnl"
-[0m14:18:28.483025 [debug] [Thread-11 ]: Began executing node model.dbt_project.int_equity_trade_pnl
-[0m14:18:28.483598 [debug] [Thread-9 (]: On model.dbt_project.int_fx_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_fx_trade_pnl"} */
+[0m11:22:17.400201 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m11:22:17.446317 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 0.046 seconds
+[0m11:22:17.448424 [debug] [Thread-9 (]: Using snowflake connection "model.dbt_project.int_fx_trade_pnl"
+[0m11:22:17.449027 [debug] [Thread-9 (]: On model.dbt_project.int_fx_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_fx_trade_pnl"} */
 use warehouse VWH_DBT_HOL
-[0m14:18:28.493429 [debug] [Thread-11 ]: Using snowflake connection "model.dbt_project.int_equity_trade_pnl"
-[0m14:18:28.494567 [debug] [Thread-11 ]: On model.dbt_project.int_equity_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_equity_trade_pnl"} */
-select current_warehouse() as warehouse
-[0m14:18:28.495131 [debug] [Thread-11 ]: Opening a new connection, currently in state init
-[0m14:18:28.558580 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 0.064 seconds
-[0m14:18:28.560971 [debug] [Thread-9 (]: Applying CREATE to: dbt_hol_2025_prod.public_02_intermediate.int_fx_trade_pnl
-[0m14:18:28.561993 [debug] [Thread-11 ]: SQL status: SUCCESS 1 in 0.067 seconds
-[0m14:18:28.563407 [debug] [Thread-9 (]: Writing runtime sql for node "model.dbt_project.int_fx_trade_pnl"
-[0m14:18:28.565503 [debug] [Thread-11 ]: Using snowflake connection "model.dbt_project.int_equity_trade_pnl"
-[0m14:18:28.566368 [debug] [Thread-11 ]: On model.dbt_project.int_equity_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_equity_trade_pnl"} */
-use warehouse VWH_DBT_HOL
-[0m14:18:28.575718 [debug] [Thread-9 (]: Using snowflake connection "model.dbt_project.int_fx_trade_pnl"
-[0m14:18:28.577632 [debug] [Thread-9 (]: On model.dbt_project.int_fx_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_fx_trade_pnl"} */
-create dynamic table dbt_hol_2025_prod.public_02_intermediate.int_fx_trade_pnl
+[0m11:22:17.498062 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 0.048 seconds
+[0m11:22:17.500297 [debug] [Thread-9 (]: Applying CREATE to: dbt_hol_2025_dev.public_02_intermediate.int_fx_trade_pnl
+[0m11:22:17.501727 [debug] [Thread-9 (]: Writing runtime sql for node "model.dbt_project.int_fx_trade_pnl"
+[0m11:22:17.509391 [debug] [Thread-9 (]: Using snowflake connection "model.dbt_project.int_fx_trade_pnl"
+[0m11:22:17.510815 [debug] [Thread-9 (]: On model.dbt_project.int_fx_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_fx_trade_pnl"} */
+create dynamic table dbt_hol_2025_dev.public_02_intermediate.int_fx_trade_pnl
         target_lag = 'downstream'
         warehouse = VWH_DBT_HOL
         refresh_mode = INCREMENTAL
@@ -395,12 +378,12 @@ create dynamic table dbt_hol_2025_prod.public_02_intermediate.int_fx_trade_pnl
 
         as (
             with trading_books as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_trading_books
+    select * from dbt_hol_2025_dev.public_01_staging.stg_trading_books
     where desk = 'FX Desk'
 ),
 
 forex_metrics as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_forex_metrics
+    select * from dbt_hol_2025_dev.public_01_staging.stg_forex_metrics
 ),
 
 -- Match BUY and SELL trades for the same ticker and trader
@@ -558,12 +541,29 @@ join matched_trades_pnl m
     on t.trade_id = m.buy_trade_id
     or t.trade_id = m.sell_trade_id
         )
-[0m14:18:28.651647 [debug] [Thread-11 ]: SQL status: SUCCESS 1 in 0.075 seconds
-[0m14:18:28.653947 [debug] [Thread-11 ]: Applying CREATE to: dbt_hol_2025_prod.public_02_intermediate.int_equity_trade_pnl
-[0m14:18:28.655272 [debug] [Thread-11 ]: Writing runtime sql for node "model.dbt_project.int_equity_trade_pnl"
-[0m14:18:28.662844 [debug] [Thread-11 ]: Using snowflake connection "model.dbt_project.int_equity_trade_pnl"
-[0m14:18:28.664259 [debug] [Thread-11 ]: On model.dbt_project.int_equity_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_equity_trade_pnl"} */
-create dynamic table dbt_hol_2025_prod.public_02_intermediate.int_equity_trade_pnl
+[0m11:22:17.829455 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.101 seconds
+[0m11:22:17.832729 [info ] [Thread-3 (]: 2 of 11 OK created sql table model public_01_staging.stg_stock_metrics ......... [[32mSUCCESS 1[0m in 2.27s]
+[0m11:22:17.833629 [debug] [Thread-3 (]: Finished running node model.dbt_project.stg_stock_metrics
+[0m11:22:17.835171 [debug] [Thread-11 ]: Began running node model.dbt_project.int_equity_trade_pnl
+[0m11:22:17.836083 [info ] [Thread-11 ]: 7 of 11 START sql dynamic_table model public_02_intermediate.int_equity_trade_pnl  [RUN]
+[0m11:22:17.836870 [debug] [Thread-11 ]: Acquiring new snowflake connection 'model.dbt_project.int_equity_trade_pnl'
+[0m11:22:17.837415 [debug] [Thread-11 ]: Began compiling node model.dbt_project.int_equity_trade_pnl
+[0m11:22:17.849348 [debug] [Thread-11 ]: Writing injected SQL for node "model.dbt_project.int_equity_trade_pnl"
+[0m11:22:17.850122 [debug] [Thread-11 ]: Began executing node model.dbt_project.int_equity_trade_pnl
+[0m11:22:17.860607 [debug] [Thread-11 ]: Using snowflake connection "model.dbt_project.int_equity_trade_pnl"
+[0m11:22:17.861203 [debug] [Thread-11 ]: On model.dbt_project.int_equity_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_equity_trade_pnl"} */
+select current_warehouse() as warehouse
+[0m11:22:17.861729 [debug] [Thread-11 ]: Opening a new connection, currently in state init
+[0m11:22:17.904770 [debug] [Thread-11 ]: SQL status: SUCCESS 1 in 0.043 seconds
+[0m11:22:17.906699 [debug] [Thread-11 ]: Using snowflake connection "model.dbt_project.int_equity_trade_pnl"
+[0m11:22:17.907276 [debug] [Thread-11 ]: On model.dbt_project.int_equity_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_equity_trade_pnl"} */
+use warehouse VWH_DBT_HOL
+[0m11:22:17.946371 [debug] [Thread-11 ]: SQL status: SUCCESS 1 in 0.038 seconds
+[0m11:22:17.948453 [debug] [Thread-11 ]: Applying CREATE to: dbt_hol_2025_dev.public_02_intermediate.int_equity_trade_pnl
+[0m11:22:17.949654 [debug] [Thread-11 ]: Writing runtime sql for node "model.dbt_project.int_equity_trade_pnl"
+[0m11:22:17.956800 [debug] [Thread-11 ]: Using snowflake connection "model.dbt_project.int_equity_trade_pnl"
+[0m11:22:17.958196 [debug] [Thread-11 ]: On model.dbt_project.int_equity_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_equity_trade_pnl"} */
+create dynamic table dbt_hol_2025_dev.public_02_intermediate.int_equity_trade_pnl
         target_lag = 'downstream'
         warehouse = VWH_DBT_HOL
         refresh_mode = INCREMENTAL
@@ -572,12 +572,12 @@ create dynamic table dbt_hol_2025_prod.public_02_intermediate.int_equity_trade_p
 
         as (
             with trading_books as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_trading_books
+    select * from dbt_hol_2025_dev.public_01_staging.stg_trading_books
     where desk = 'Equity Desk'
 ),
 
 stock_metrics as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_stock_metrics
+    select * from dbt_hol_2025_dev.public_01_staging.stg_stock_metrics
 ),
 
 -- Match BUY and SELL trades for the same ticker and trader
@@ -729,33 +729,86 @@ join matched_trades_pnl m
     on t.trade_id = m.buy_trade_id
     or t.trade_id = m.sell_trade_id
         )
-[0m14:18:31.373077 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 3.829 seconds
-[0m14:18:31.375425 [debug] [Thread-7 (]: Using snowflake connection "model.dbt_project.int_extracted_entities"
-[0m14:18:31.376115 [debug] [Thread-7 (]: On model.dbt_project.int_extracted_entities: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_extracted_entities"} */
-use warehouse VWH_DBT_HOL_PROD
-[0m14:18:31.487520 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 0.111 seconds
-[0m14:18:31.490383 [info ] [Thread-7 (]: 5 of 11 OK created sql dynamic_table model public_02_intermediate.int_extracted_entities  [[32mSUCCESS 1[0m in 4.29s]
-[0m14:18:31.491316 [debug] [Thread-7 (]: Finished running node model.dbt_project.int_extracted_entities
-[0m14:18:31.492952 [debug] [Thread-13 ]: Began running node model.dbt_project.fct_trader_drivers
-[0m14:18:31.493987 [info ] [Thread-13 ]: 8 of 11 START sql dynamic_table model public_03_marts.fct_trader_drivers ....... [RUN]
-[0m14:18:31.494863 [debug] [Thread-13 ]: Acquiring new snowflake connection 'model.dbt_project.fct_trader_drivers'
-[0m14:18:31.495482 [debug] [Thread-13 ]: Began compiling node model.dbt_project.fct_trader_drivers
-[0m14:18:31.507419 [debug] [Thread-13 ]: Writing injected SQL for node "model.dbt_project.fct_trader_drivers"
-[0m14:18:31.508329 [debug] [Thread-13 ]: Began executing node model.dbt_project.fct_trader_drivers
-[0m14:18:31.519593 [debug] [Thread-13 ]: Using snowflake connection "model.dbt_project.fct_trader_drivers"
-[0m14:18:31.520258 [debug] [Thread-13 ]: On model.dbt_project.fct_trader_drivers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_trader_drivers"} */
-select current_warehouse() as warehouse
-[0m14:18:31.520801 [debug] [Thread-13 ]: Opening a new connection, currently in state init
-[0m14:18:31.588956 [debug] [Thread-13 ]: SQL status: SUCCESS 1 in 0.068 seconds
-[0m14:18:31.591125 [debug] [Thread-13 ]: Using snowflake connection "model.dbt_project.fct_trader_drivers"
-[0m14:18:31.591748 [debug] [Thread-13 ]: On model.dbt_project.fct_trader_drivers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_trader_drivers"} */
+[0m11:22:19.747079 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 2.235 seconds
+[0m11:22:19.749305 [debug] [Thread-9 (]: Using snowflake connection "model.dbt_project.int_fx_trade_pnl"
+[0m11:22:19.749894 [debug] [Thread-9 (]: On model.dbt_project.int_fx_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_fx_trade_pnl"} */
 use warehouse VWH_DBT_HOL
-[0m14:18:31.719545 [debug] [Thread-13 ]: SQL status: SUCCESS 1 in 0.127 seconds
-[0m14:18:31.721799 [debug] [Thread-13 ]: Applying CREATE to: dbt_hol_2025_prod.public_03_marts.fct_trader_drivers
-[0m14:18:31.723074 [debug] [Thread-13 ]: Writing runtime sql for node "model.dbt_project.fct_trader_drivers"
-[0m14:18:31.725670 [debug] [Thread-13 ]: Using snowflake connection "model.dbt_project.fct_trader_drivers"
-[0m14:18:31.726438 [debug] [Thread-13 ]: On model.dbt_project.fct_trader_drivers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_trader_drivers"} */
-create dynamic table dbt_hol_2025_prod.public_03_marts.fct_trader_drivers
+[0m11:22:19.807720 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 0.057 seconds
+[0m11:22:19.810557 [info ] [Thread-9 (]: 6 of 11 OK created sql dynamic_table model public_02_intermediate.int_fx_trade_pnl  [[32mSUCCESS 1[0m in 2.44s]
+[0m11:22:19.811449 [debug] [Thread-9 (]: Finished running node model.dbt_project.int_fx_trade_pnl
+[0m11:22:19.910065 [debug] [Thread-11 ]: SQL status: SUCCESS 1 in 1.951 seconds
+[0m11:22:19.912273 [debug] [Thread-11 ]: Using snowflake connection "model.dbt_project.int_equity_trade_pnl"
+[0m11:22:19.912873 [debug] [Thread-11 ]: On model.dbt_project.int_equity_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_equity_trade_pnl"} */
+use warehouse VWH_DBT_HOL
+[0m11:22:19.963897 [debug] [Thread-11 ]: SQL status: SUCCESS 1 in 0.050 seconds
+[0m11:22:19.966587 [info ] [Thread-11 ]: 7 of 11 OK created sql dynamic_table model public_02_intermediate.int_equity_trade_pnl  [[32mSUCCESS 1[0m in 2.13s]
+[0m11:22:19.967470 [debug] [Thread-11 ]: Finished running node model.dbt_project.int_equity_trade_pnl
+[0m11:22:19.969342 [debug] [Thread-13 ]: Began running node model.dbt_project.int_trade_pnl
+[0m11:22:19.970286 [info ] [Thread-13 ]: 8 of 11 START sql dynamic_table model public_02_intermediate.int_trade_pnl ..... [RUN]
+[0m11:22:19.971099 [debug] [Thread-13 ]: Acquiring new snowflake connection 'model.dbt_project.int_trade_pnl'
+[0m11:22:19.971648 [debug] [Thread-13 ]: Began compiling node model.dbt_project.int_trade_pnl
+[0m11:22:19.982660 [debug] [Thread-13 ]: Writing injected SQL for node "model.dbt_project.int_trade_pnl"
+[0m11:22:19.983431 [debug] [Thread-13 ]: Began executing node model.dbt_project.int_trade_pnl
+[0m11:22:20.117696 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 3.457 seconds
+[0m11:22:20.137361 [debug] [Thread-13 ]: Using snowflake connection "model.dbt_project.int_trade_pnl"
+[0m11:22:20.139520 [debug] [Thread-7 (]: Using snowflake connection "model.dbt_project.int_extracted_entities"
+[0m11:22:20.140171 [debug] [Thread-13 ]: On model.dbt_project.int_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_trade_pnl"} */
+select current_warehouse() as warehouse
+[0m11:22:20.140769 [debug] [Thread-7 (]: On model.dbt_project.int_extracted_entities: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_extracted_entities"} */
+use warehouse VWH_DBT_HOL_DEV
+[0m11:22:20.141333 [debug] [Thread-13 ]: Opening a new connection, currently in state init
+[0m11:22:20.184470 [debug] [Thread-13 ]: SQL status: SUCCESS 1 in 0.043 seconds
+[0m11:22:20.186471 [debug] [Thread-13 ]: Using snowflake connection "model.dbt_project.int_trade_pnl"
+[0m11:22:20.187062 [debug] [Thread-13 ]: On model.dbt_project.int_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_trade_pnl"} */
+use warehouse VWH_DBT_HOL
+[0m11:22:20.250077 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 0.108 seconds
+[0m11:22:20.252627 [info ] [Thread-7 (]: 5 of 11 OK created sql dynamic_table model public_02_intermediate.int_extracted_entities  [[32mSUCCESS 1[0m in 3.77s]
+[0m11:22:20.253515 [debug] [Thread-7 (]: Finished running node model.dbt_project.int_extracted_entities
+[0m11:22:20.254957 [debug] [Thread-15 ]: Began running node model.dbt_project.fct_trader_drivers
+[0m11:22:20.255820 [info ] [Thread-15 ]: 9 of 11 START sql dynamic_table model public_03_marts.fct_trader_drivers ....... [RUN]
+[0m11:22:20.256590 [debug] [Thread-15 ]: Acquiring new snowflake connection 'model.dbt_project.fct_trader_drivers'
+[0m11:22:20.257127 [debug] [Thread-15 ]: Began compiling node model.dbt_project.fct_trader_drivers
+[0m11:22:20.268633 [debug] [Thread-15 ]: Writing injected SQL for node "model.dbt_project.fct_trader_drivers"
+[0m11:22:20.269452 [debug] [Thread-15 ]: Began executing node model.dbt_project.fct_trader_drivers
+[0m11:22:20.279074 [debug] [Thread-15 ]: Using snowflake connection "model.dbt_project.fct_trader_drivers"
+[0m11:22:20.280023 [debug] [Thread-13 ]: SQL status: SUCCESS 1 in 0.092 seconds
+[0m11:22:20.280643 [debug] [Thread-15 ]: On model.dbt_project.fct_trader_drivers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_trader_drivers"} */
+select current_warehouse() as warehouse
+[0m11:22:20.282708 [debug] [Thread-13 ]: Applying CREATE to: dbt_hol_2025_dev.public_02_intermediate.int_trade_pnl
+[0m11:22:20.283313 [debug] [Thread-15 ]: Opening a new connection, currently in state init
+[0m11:22:20.284512 [debug] [Thread-13 ]: Writing runtime sql for node "model.dbt_project.int_trade_pnl"
+[0m11:22:20.288471 [debug] [Thread-13 ]: Using snowflake connection "model.dbt_project.int_trade_pnl"
+[0m11:22:20.289131 [debug] [Thread-13 ]: On model.dbt_project.int_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_trade_pnl"} */
+create dynamic table dbt_hol_2025_dev.public_02_intermediate.int_trade_pnl
+        target_lag = 'downstream'
+        warehouse = VWH_DBT_HOL
+        refresh_mode = INCREMENTAL
+
+        initialize = ON_CREATE
+
+        as (
+            with equity_trades as (
+    select * from dbt_hol_2025_dev.public_02_intermediate.int_equity_trade_pnl
+),
+
+fx_trades as (
+    select * from dbt_hol_2025_dev.public_02_intermediate.int_fx_trade_pnl
+)
+
+select * from equity_trades
+union all
+select * from fx_trades
+        )
+[0m11:22:20.331765 [debug] [Thread-15 ]: SQL status: SUCCESS 1 in 0.048 seconds
+[0m11:22:20.333658 [debug] [Thread-15 ]: Using snowflake connection "model.dbt_project.fct_trader_drivers"
+[0m11:22:20.334238 [debug] [Thread-15 ]: On model.dbt_project.fct_trader_drivers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_trader_drivers"} */
+use warehouse VWH_DBT_HOL
+[0m11:22:20.396236 [debug] [Thread-15 ]: SQL status: SUCCESS 1 in 0.061 seconds
+[0m11:22:20.398479 [debug] [Thread-15 ]: Applying CREATE to: dbt_hol_2025_dev.public_03_marts.fct_trader_drivers
+[0m11:22:20.399677 [debug] [Thread-15 ]: Writing runtime sql for node "model.dbt_project.fct_trader_drivers"
+[0m11:22:20.402184 [debug] [Thread-15 ]: Using snowflake connection "model.dbt_project.fct_trader_drivers"
+[0m11:22:20.403148 [debug] [Thread-15 ]: On model.dbt_project.fct_trader_drivers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_trader_drivers"} */
+create dynamic table dbt_hol_2025_dev.public_03_marts.fct_trader_drivers
         target_lag = '1 minute'
         warehouse = VWH_DBT_HOL
         refresh_mode = FULL
@@ -766,7 +819,7 @@ create dynamic table dbt_hol_2025_prod.public_03_marts.fct_trader_drivers
             
 
 with extracted_entities as (
-    select * from dbt_hol_2025_prod.public_02_intermediate.int_extracted_entities
+    select * from dbt_hol_2025_dev.public_02_intermediate.int_extracted_entities
 ),
 
 -- Calculate trade driver statistics by trader
@@ -806,93 +859,33 @@ final_stats as (
 select * from final_stats
 order by trader_name, total_trades desc
         )
-[0m14:18:32.675456 [debug] [Thread-11 ]: SQL status: SUCCESS 1 in 4.010 seconds
-[0m14:18:32.677747 [debug] [Thread-11 ]: Using snowflake connection "model.dbt_project.int_equity_trade_pnl"
-[0m14:18:32.678376 [debug] [Thread-11 ]: On model.dbt_project.int_equity_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_equity_trade_pnl"} */
+[0m11:22:22.543907 [debug] [Thread-13 ]: SQL status: SUCCESS 1 in 2.254 seconds
+[0m11:22:22.546117 [debug] [Thread-13 ]: Using snowflake connection "model.dbt_project.int_trade_pnl"
+[0m11:22:22.546769 [debug] [Thread-13 ]: On model.dbt_project.int_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_trade_pnl"} */
 use warehouse VWH_DBT_HOL
-[0m14:18:32.826152 [debug] [Thread-11 ]: SQL status: SUCCESS 1 in 0.147 seconds
-[0m14:18:32.829066 [info ] [Thread-11 ]: 7 of 11 OK created sql dynamic_table model public_02_intermediate.int_equity_trade_pnl  [[32mSUCCESS 1[0m in 4.36s]
-[0m14:18:32.829993 [debug] [Thread-11 ]: Finished running node model.dbt_project.int_equity_trade_pnl
-[0m14:18:34.131619 [debug] [Thread-13 ]: SQL status: SUCCESS 1 in 2.404 seconds
-[0m14:18:34.133921 [debug] [Thread-13 ]: Using snowflake connection "model.dbt_project.fct_trader_drivers"
-[0m14:18:34.134546 [debug] [Thread-13 ]: On model.dbt_project.fct_trader_drivers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_trader_drivers"} */
-use warehouse VWH_DBT_HOL_PROD
-[0m14:18:34.245544 [debug] [Thread-13 ]: SQL status: SUCCESS 1 in 0.110 seconds
-[0m14:18:34.248313 [info ] [Thread-13 ]: 8 of 11 OK created sql dynamic_table model public_03_marts.fct_trader_drivers .. [[32mSUCCESS 1[0m in 2.75s]
-[0m14:18:34.249259 [debug] [Thread-13 ]: Finished running node model.dbt_project.fct_trader_drivers
-[0m14:18:35.466540 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 6.888 seconds
-[0m14:18:35.468867 [debug] [Thread-9 (]: Using snowflake connection "model.dbt_project.int_fx_trade_pnl"
-[0m14:18:35.469509 [debug] [Thread-9 (]: On model.dbt_project.int_fx_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_fx_trade_pnl"} */
-use warehouse VWH_DBT_HOL
-[0m14:18:35.724408 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 0.254 seconds
-[0m14:18:35.727264 [info ] [Thread-9 (]: 6 of 11 OK created sql dynamic_table model public_02_intermediate.int_fx_trade_pnl  [[32mSUCCESS 1[0m in 7.34s]
-[0m14:18:35.728176 [debug] [Thread-9 (]: Finished running node model.dbt_project.int_fx_trade_pnl
-[0m14:18:35.730019 [debug] [Thread-15 ]: Began running node model.dbt_project.int_trade_pnl
-[0m14:18:35.731445 [info ] [Thread-15 ]: 9 of 11 START sql dynamic_table model public_02_intermediate.int_trade_pnl ..... [RUN]
-[0m14:18:35.732324 [debug] [Thread-15 ]: Acquiring new snowflake connection 'model.dbt_project.int_trade_pnl'
-[0m14:18:35.732890 [debug] [Thread-15 ]: Began compiling node model.dbt_project.int_trade_pnl
-[0m14:18:35.744292 [debug] [Thread-15 ]: Writing injected SQL for node "model.dbt_project.int_trade_pnl"
-[0m14:18:35.745138 [debug] [Thread-15 ]: Began executing node model.dbt_project.int_trade_pnl
-[0m14:18:35.755113 [debug] [Thread-15 ]: Using snowflake connection "model.dbt_project.int_trade_pnl"
-[0m14:18:35.755817 [debug] [Thread-15 ]: On model.dbt_project.int_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_trade_pnl"} */
+[0m11:22:22.603927 [debug] [Thread-13 ]: SQL status: SUCCESS 1 in 0.056 seconds
+[0m11:22:22.606638 [info ] [Thread-13 ]: 8 of 11 OK created sql dynamic_table model public_02_intermediate.int_trade_pnl  [[32mSUCCESS 1[0m in 2.64s]
+[0m11:22:22.607555 [debug] [Thread-13 ]: Finished running node model.dbt_project.int_trade_pnl
+[0m11:22:22.609085 [debug] [Thread-17 ]: Began running node model.dbt_project.fct_pnl_by_desk
+[0m11:22:22.610103 [info ] [Thread-17 ]: 10 of 11 START sql dynamic_table model public_03_marts.fct_pnl_by_desk ......... [RUN]
+[0m11:22:22.610911 [debug] [Thread-17 ]: Acquiring new snowflake connection 'model.dbt_project.fct_pnl_by_desk'
+[0m11:22:22.611512 [debug] [Thread-17 ]: Began compiling node model.dbt_project.fct_pnl_by_desk
+[0m11:22:22.622535 [debug] [Thread-17 ]: Writing injected SQL for node "model.dbt_project.fct_pnl_by_desk"
+[0m11:22:22.623288 [debug] [Thread-17 ]: Began executing node model.dbt_project.fct_pnl_by_desk
+[0m11:22:22.632872 [debug] [Thread-17 ]: Using snowflake connection "model.dbt_project.fct_pnl_by_desk"
+[0m11:22:22.633470 [debug] [Thread-17 ]: On model.dbt_project.fct_pnl_by_desk: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_pnl_by_desk"} */
 select current_warehouse() as warehouse
-[0m14:18:35.756391 [debug] [Thread-15 ]: Opening a new connection, currently in state init
-[0m14:18:35.849968 [debug] [Thread-15 ]: SQL status: SUCCESS 1 in 0.093 seconds
-[0m14:18:35.852139 [debug] [Thread-15 ]: Using snowflake connection "model.dbt_project.int_trade_pnl"
-[0m14:18:35.852791 [debug] [Thread-15 ]: On model.dbt_project.int_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_trade_pnl"} */
+[0m11:22:22.633998 [debug] [Thread-17 ]: Opening a new connection, currently in state init
+[0m11:22:22.683451 [debug] [Thread-17 ]: SQL status: SUCCESS 1 in 0.049 seconds
+[0m11:22:22.685485 [debug] [Thread-17 ]: Using snowflake connection "model.dbt_project.fct_pnl_by_desk"
+[0m11:22:22.686073 [debug] [Thread-17 ]: On model.dbt_project.fct_pnl_by_desk: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_pnl_by_desk"} */
 use warehouse VWH_DBT_HOL
-[0m14:18:35.946946 [debug] [Thread-15 ]: SQL status: SUCCESS 1 in 0.093 seconds
-[0m14:18:35.949353 [debug] [Thread-15 ]: Applying CREATE to: dbt_hol_2025_prod.public_02_intermediate.int_trade_pnl
-[0m14:18:35.950658 [debug] [Thread-15 ]: Writing runtime sql for node "model.dbt_project.int_trade_pnl"
-[0m14:18:35.952506 [debug] [Thread-15 ]: Using snowflake connection "model.dbt_project.int_trade_pnl"
-[0m14:18:35.953159 [debug] [Thread-15 ]: On model.dbt_project.int_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_trade_pnl"} */
-create dynamic table dbt_hol_2025_prod.public_02_intermediate.int_trade_pnl
-        target_lag = 'downstream'
-        warehouse = VWH_DBT_HOL
-        refresh_mode = INCREMENTAL
-
-        initialize = ON_CREATE
-
-        as (
-            with equity_trades as (
-    select * from dbt_hol_2025_prod.public_02_intermediate.int_equity_trade_pnl
-),
-
-fx_trades as (
-    select * from dbt_hol_2025_prod.public_02_intermediate.int_fx_trade_pnl
-)
-
-select * from equity_trades
-union all
-select * from fx_trades
-        )
-[0m14:18:39.664700 [debug] [Thread-15 ]: SQL status: SUCCESS 1 in 3.711 seconds
-[0m14:18:39.666907 [debug] [Thread-15 ]: Using snowflake connection "model.dbt_project.int_trade_pnl"
-[0m14:18:39.667516 [debug] [Thread-15 ]: On model.dbt_project.int_trade_pnl: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.int_trade_pnl"} */
-use warehouse VWH_DBT_HOL
-[0m14:18:39.729501 [debug] [Thread-15 ]: SQL status: SUCCESS 1 in 0.061 seconds
-[0m14:18:39.732214 [info ] [Thread-15 ]: 9 of 11 OK created sql dynamic_table model public_02_intermediate.int_trade_pnl  [[32mSUCCESS 1[0m in 4.00s]
-[0m14:18:39.733114 [debug] [Thread-15 ]: Finished running node model.dbt_project.int_trade_pnl
-[0m14:18:39.734803 [debug] [Thread-17 ]: Began running node model.dbt_project.fct_pnl_by_desk
-[0m14:18:39.736110 [info ] [Thread-17 ]: 10 of 11 START sql dynamic_table model public_03_marts.fct_pnl_by_desk ......... [RUN]
-[0m14:18:39.736962 [debug] [Thread-17 ]: Acquiring new snowflake connection 'model.dbt_project.fct_pnl_by_desk'
-[0m14:18:39.737521 [debug] [Thread-17 ]: Began compiling node model.dbt_project.fct_pnl_by_desk
-[0m14:18:39.751107 [debug] [Thread-17 ]: Writing injected SQL for node "model.dbt_project.fct_pnl_by_desk"
-[0m14:18:39.751984 [debug] [Thread-17 ]: Began executing node model.dbt_project.fct_pnl_by_desk
-[0m14:18:39.761622 [debug] [Thread-17 ]: Using snowflake connection "model.dbt_project.fct_pnl_by_desk"
-[0m14:18:39.762276 [debug] [Thread-17 ]: On model.dbt_project.fct_pnl_by_desk: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_pnl_by_desk"} */
-select current_warehouse() as warehouse
-[0m14:18:39.762817 [debug] [Thread-17 ]: Opening a new connection, currently in state init
-[0m14:18:39.894376 [debug] [Thread-17 ]: SQL status: SUCCESS 1 in 0.131 seconds
-[0m14:18:39.896493 [debug] [Thread-17 ]: Using snowflake connection "model.dbt_project.fct_pnl_by_desk"
-[0m14:18:39.897095 [debug] [Thread-17 ]: On model.dbt_project.fct_pnl_by_desk: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_pnl_by_desk"} */
-use warehouse VWH_DBT_HOL
-[0m14:18:39.968384 [debug] [Thread-17 ]: SQL status: SUCCESS 1 in 0.071 seconds
-[0m14:18:39.970715 [debug] [Thread-17 ]: Applying CREATE to: dbt_hol_2025_prod.public_03_marts.fct_pnl_by_desk
-[0m14:18:39.972045 [debug] [Thread-17 ]: Writing runtime sql for node "model.dbt_project.fct_pnl_by_desk"
-[0m14:18:39.975931 [debug] [Thread-17 ]: Using snowflake connection "model.dbt_project.fct_pnl_by_desk"
-[0m14:18:39.976804 [debug] [Thread-17 ]: On model.dbt_project.fct_pnl_by_desk: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_pnl_by_desk"} */
-create dynamic table dbt_hol_2025_prod.public_03_marts.fct_pnl_by_desk
+[0m11:22:22.738644 [debug] [Thread-17 ]: SQL status: SUCCESS 1 in 0.052 seconds
+[0m11:22:22.740819 [debug] [Thread-17 ]: Applying CREATE to: dbt_hol_2025_dev.public_03_marts.fct_pnl_by_desk
+[0m11:22:22.742015 [debug] [Thread-17 ]: Writing runtime sql for node "model.dbt_project.fct_pnl_by_desk"
+[0m11:22:22.747937 [debug] [Thread-17 ]: Using snowflake connection "model.dbt_project.fct_pnl_by_desk"
+[0m11:22:22.748798 [debug] [Thread-17 ]: On model.dbt_project.fct_pnl_by_desk: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_pnl_by_desk"} */
+create dynamic table dbt_hol_2025_dev.public_03_marts.fct_pnl_by_desk
         target_lag = '1 minute'
         warehouse = VWH_DBT_HOL
         refresh_mode = INCREMENTAL
@@ -901,7 +894,7 @@ create dynamic table dbt_hol_2025_prod.public_03_marts.fct_pnl_by_desk
 
         as (
             with trade_performance as (
-    select * from dbt_hol_2025_prod.public_02_intermediate.int_trade_pnl
+    select * from dbt_hol_2025_dev.public_02_intermediate.int_trade_pnl
 ),
 
 -- Calculate daily P&L metrics by desk and ticker
@@ -957,33 +950,40 @@ cumulative_metrics as (
 
 select * from cumulative_metrics
         )
-[0m14:18:44.373822 [debug] [Thread-17 ]: SQL status: SUCCESS 1 in 4.396 seconds
-[0m14:18:44.376029 [debug] [Thread-17 ]: Using snowflake connection "model.dbt_project.fct_pnl_by_desk"
-[0m14:18:44.376628 [debug] [Thread-17 ]: On model.dbt_project.fct_pnl_by_desk: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_pnl_by_desk"} */
+[0m11:22:23.805722 [debug] [Thread-15 ]: SQL status: SUCCESS 1 in 3.402 seconds
+[0m11:22:23.807980 [debug] [Thread-15 ]: Using snowflake connection "model.dbt_project.fct_trader_drivers"
+[0m11:22:23.808594 [debug] [Thread-15 ]: On model.dbt_project.fct_trader_drivers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_trader_drivers"} */
 use warehouse VWH_DBT_HOL
-[0m14:18:44.439649 [debug] [Thread-17 ]: SQL status: SUCCESS 1 in 0.062 seconds
-[0m14:18:44.442343 [info ] [Thread-17 ]: 10 of 11 OK created sql dynamic_table model public_03_marts.fct_pnl_by_desk .... [[32mSUCCESS 1[0m in 4.71s]
-[0m14:18:44.443242 [debug] [Thread-17 ]: Finished running node model.dbt_project.fct_pnl_by_desk
-[0m14:18:44.444888 [debug] [Thread-19 ]: Began running node model.dbt_project.fct_pnl_vs_target
-[0m14:18:44.446101 [info ] [Thread-19 ]: 11 of 11 START sql dynamic_table model public_03_marts.fct_pnl_vs_target ....... [RUN]
-[0m14:18:44.446944 [debug] [Thread-19 ]: Acquiring new snowflake connection 'model.dbt_project.fct_pnl_vs_target'
-[0m14:18:44.447494 [debug] [Thread-19 ]: Began compiling node model.dbt_project.fct_pnl_vs_target
-[0m14:18:44.460874 [debug] [Thread-19 ]: Writing injected SQL for node "model.dbt_project.fct_pnl_vs_target"
-[0m14:18:44.461678 [debug] [Thread-19 ]: Began executing node model.dbt_project.fct_pnl_vs_target
-[0m14:18:44.471377 [debug] [Thread-19 ]: Using snowflake connection "model.dbt_project.fct_pnl_vs_target"
-[0m14:18:44.472036 [debug] [Thread-19 ]: On model.dbt_project.fct_pnl_vs_target: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_pnl_vs_target"} */
+[0m11:22:23.848047 [debug] [Thread-15 ]: SQL status: SUCCESS 1 in 0.039 seconds
+[0m11:22:23.850672 [info ] [Thread-15 ]: 9 of 11 OK created sql dynamic_table model public_03_marts.fct_trader_drivers .. [[32mSUCCESS 1[0m in 3.59s]
+[0m11:22:23.851556 [debug] [Thread-15 ]: Finished running node model.dbt_project.fct_trader_drivers
+[0m11:22:25.366765 [debug] [Thread-17 ]: SQL status: SUCCESS 1 in 2.617 seconds
+[0m11:22:25.369056 [debug] [Thread-17 ]: Using snowflake connection "model.dbt_project.fct_pnl_by_desk"
+[0m11:22:25.369672 [debug] [Thread-17 ]: On model.dbt_project.fct_pnl_by_desk: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_pnl_by_desk"} */
+use warehouse VWH_DBT_HOL
+[0m11:22:25.415322 [debug] [Thread-17 ]: SQL status: SUCCESS 1 in 0.045 seconds
+[0m11:22:25.417980 [info ] [Thread-17 ]: 10 of 11 OK created sql dynamic_table model public_03_marts.fct_pnl_by_desk .... [[32mSUCCESS 1[0m in 2.81s]
+[0m11:22:25.418895 [debug] [Thread-17 ]: Finished running node model.dbt_project.fct_pnl_by_desk
+[0m11:22:25.420688 [debug] [Thread-19 ]: Began running node model.dbt_project.fct_pnl_vs_target
+[0m11:22:25.421926 [info ] [Thread-19 ]: 11 of 11 START sql dynamic_table model public_03_marts.fct_pnl_vs_target ....... [RUN]
+[0m11:22:25.422740 [debug] [Thread-19 ]: Acquiring new snowflake connection 'model.dbt_project.fct_pnl_vs_target'
+[0m11:22:25.423292 [debug] [Thread-19 ]: Began compiling node model.dbt_project.fct_pnl_vs_target
+[0m11:22:25.434767 [debug] [Thread-19 ]: Writing injected SQL for node "model.dbt_project.fct_pnl_vs_target"
+[0m11:22:25.435530 [debug] [Thread-19 ]: Began executing node model.dbt_project.fct_pnl_vs_target
+[0m11:22:25.445164 [debug] [Thread-19 ]: Using snowflake connection "model.dbt_project.fct_pnl_vs_target"
+[0m11:22:25.445769 [debug] [Thread-19 ]: On model.dbt_project.fct_pnl_vs_target: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_pnl_vs_target"} */
 select current_warehouse() as warehouse
-[0m14:18:44.472581 [debug] [Thread-19 ]: Opening a new connection, currently in state init
-[0m14:18:44.572982 [debug] [Thread-19 ]: SQL status: SUCCESS 1 in 0.100 seconds
-[0m14:18:44.575136 [debug] [Thread-19 ]: Using snowflake connection "model.dbt_project.fct_pnl_vs_target"
-[0m14:18:44.575791 [debug] [Thread-19 ]: On model.dbt_project.fct_pnl_vs_target: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_pnl_vs_target"} */
+[0m11:22:25.446311 [debug] [Thread-19 ]: Opening a new connection, currently in state init
+[0m11:22:25.497398 [debug] [Thread-19 ]: SQL status: SUCCESS 1 in 0.051 seconds
+[0m11:22:25.499533 [debug] [Thread-19 ]: Using snowflake connection "model.dbt_project.fct_pnl_vs_target"
+[0m11:22:25.500117 [debug] [Thread-19 ]: On model.dbt_project.fct_pnl_vs_target: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_pnl_vs_target"} */
 use warehouse VWH_DBT_HOL
-[0m14:18:44.649835 [debug] [Thread-19 ]: SQL status: SUCCESS 1 in 0.073 seconds
-[0m14:18:44.652098 [debug] [Thread-19 ]: Applying CREATE to: dbt_hol_2025_prod.public_03_marts.fct_pnl_vs_target
-[0m14:18:44.653348 [debug] [Thread-19 ]: Writing runtime sql for node "model.dbt_project.fct_pnl_vs_target"
-[0m14:18:44.657638 [debug] [Thread-19 ]: Using snowflake connection "model.dbt_project.fct_pnl_vs_target"
-[0m14:18:44.658569 [debug] [Thread-19 ]: On model.dbt_project.fct_pnl_vs_target: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_pnl_vs_target"} */
-create dynamic table dbt_hol_2025_prod.public_03_marts.fct_pnl_vs_target
+[0m11:22:25.539746 [debug] [Thread-19 ]: SQL status: SUCCESS 1 in 0.039 seconds
+[0m11:22:25.541937 [debug] [Thread-19 ]: Applying CREATE to: dbt_hol_2025_dev.public_03_marts.fct_pnl_vs_target
+[0m11:22:25.543140 [debug] [Thread-19 ]: Writing runtime sql for node "model.dbt_project.fct_pnl_vs_target"
+[0m11:22:25.547369 [debug] [Thread-19 ]: Using snowflake connection "model.dbt_project.fct_pnl_vs_target"
+[0m11:22:25.548366 [debug] [Thread-19 ]: On model.dbt_project.fct_pnl_vs_target: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_pnl_vs_target"} */
+create dynamic table dbt_hol_2025_dev.public_03_marts.fct_pnl_vs_target
         target_lag = '1 minute'
         warehouse = VWH_DBT_HOL
         refresh_mode = INCREMENTAL
@@ -992,11 +992,11 @@ create dynamic table dbt_hol_2025_prod.public_03_marts.fct_pnl_vs_target
 
         as (
             with pnl_by_desk as (
-    select * from dbt_hol_2025_prod.public_03_marts.fct_pnl_by_desk
+    select * from dbt_hol_2025_dev.public_03_marts.fct_pnl_by_desk
 ),
 
 weights as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_weights
+    select * from dbt_hol_2025_dev.public_01_staging.stg_weights
 ),
 
 -- Calculate total portfolio value by desk and region
@@ -1059,35 +1059,35 @@ allocation_variance as (
 
 select * from allocation_variance
         )
-[0m14:18:48.660928 [debug] [Thread-19 ]: SQL status: SUCCESS 1 in 4.001 seconds
-[0m14:18:48.663071 [debug] [Thread-19 ]: Using snowflake connection "model.dbt_project.fct_pnl_vs_target"
-[0m14:18:48.663680 [debug] [Thread-19 ]: On model.dbt_project.fct_pnl_vs_target: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "prod", "node_id": "model.dbt_project.fct_pnl_vs_target"} */
+[0m11:22:28.150182 [debug] [Thread-19 ]: SQL status: SUCCESS 1 in 2.601 seconds
+[0m11:22:28.152591 [debug] [Thread-19 ]: Using snowflake connection "model.dbt_project.fct_pnl_vs_target"
+[0m11:22:28.153209 [debug] [Thread-19 ]: On model.dbt_project.fct_pnl_vs_target: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.fct_pnl_vs_target"} */
 use warehouse VWH_DBT_HOL
-[0m14:18:48.726874 [debug] [Thread-19 ]: SQL status: SUCCESS 1 in 0.062 seconds
-[0m14:18:48.729568 [info ] [Thread-19 ]: 11 of 11 OK created sql dynamic_table model public_03_marts.fct_pnl_vs_target .. [[32mSUCCESS 1[0m in 4.28s]
-[0m14:18:48.730456 [debug] [Thread-19 ]: Finished running node model.dbt_project.fct_pnl_vs_target
-[0m14:18:48.748269 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
-[0m14:18:48.748829 [debug] [Dummy-1   ]: Connection 'model.dbt_project.stg_forex_metrics' was properly closed.
-[0m14:18:48.749282 [debug] [Dummy-1   ]: Connection 'model.dbt_project.stg_weights' was properly closed.
-[0m14:18:48.749707 [debug] [Dummy-1   ]: Connection 'model.dbt_project.stg_stock_metrics' was properly closed.
-[0m14:18:48.750127 [debug] [Dummy-1   ]: Connection 'model.dbt_project.stg_trading_books' was properly closed.
-[0m14:18:48.750542 [debug] [Dummy-1   ]: Connection 'model.dbt_project.int_extracted_entities' was properly closed.
-[0m14:18:48.750953 [debug] [Dummy-1   ]: Connection 'model.dbt_project.int_fx_trade_pnl' was properly closed.
-[0m14:18:48.751366 [debug] [Dummy-1   ]: Connection 'model.dbt_project.int_equity_trade_pnl' was properly closed.
-[0m14:18:48.751775 [debug] [Dummy-1   ]: Connection 'model.dbt_project.fct_trader_drivers' was properly closed.
-[0m14:18:48.752206 [debug] [Dummy-1   ]: Connection 'model.dbt_project.int_trade_pnl' was properly closed.
-[0m14:18:48.752614 [debug] [Dummy-1   ]: Connection 'model.dbt_project.fct_pnl_by_desk' was properly closed.
-[0m14:18:48.753018 [debug] [Dummy-1   ]: Connection 'model.dbt_project.fct_pnl_vs_target' was properly closed.
-[0m14:18:48.753765 [info ] [Dummy-1   ]: 
-[0m14:18:48.754376 [info ] [Dummy-1   ]: Finished running 7 dynamic table models, 4 table models in 0 hours 0 minutes and 25.34 seconds (25.34s).
-[0m14:18:48.757017 [debug] [Dummy-1   ]: Command end result
-[0m14:18:48.793770 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt_output/target/manifest.json
-[0m14:18:48.796414 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt_output/target/semantic_manifest.json
-[0m14:18:48.804574 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt_output/target/run_results.json
-[0m14:18:48.805271 [info ] [Dummy-1   ]: 
-[0m14:18:48.806057 [info ] [Dummy-1   ]: [32mCompleted successfully[0m
-[0m14:18:48.806648 [info ] [Dummy-1   ]: 
-[0m14:18:48.807262 [info ] [Dummy-1   ]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 TOTAL=11
-[0m14:18:48.809018 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 29.309292, "process_in_blocks": "0", "process_kernel_time": 1.14, "process_mem_max_rss": "865556", "process_out_blocks": "0", "process_user_time": 8.51}
-[0m14:18:48.809675 [debug] [Dummy-1   ]: Command `cli run` succeeded at 14:18:48.809415 after 29.31 seconds
-[0m14:18:48.810200 [debug] [Dummy-1   ]: Flushing usage events
+[0m11:22:28.476769 [debug] [Thread-19 ]: SQL status: SUCCESS 1 in 0.323 seconds
+[0m11:22:28.479468 [info ] [Thread-19 ]: 11 of 11 OK created sql dynamic_table model public_03_marts.fct_pnl_vs_target .. [[32mSUCCESS 1[0m in 3.06s]
+[0m11:22:28.480331 [debug] [Thread-19 ]: Finished running node model.dbt_project.fct_pnl_vs_target
+[0m11:22:28.497529 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m11:22:28.498145 [debug] [Dummy-1   ]: Connection 'model.dbt_project.stg_stock_metrics' was properly closed.
+[0m11:22:28.498616 [debug] [Dummy-1   ]: Connection 'model.dbt_project.stg_forex_metrics' was properly closed.
+[0m11:22:28.499044 [debug] [Dummy-1   ]: Connection 'model.dbt_project.stg_trading_books' was properly closed.
+[0m11:22:28.499462 [debug] [Dummy-1   ]: Connection 'model.dbt_project.stg_weights' was properly closed.
+[0m11:22:28.499906 [debug] [Dummy-1   ]: Connection 'model.dbt_project.int_extracted_entities' was properly closed.
+[0m11:22:28.500322 [debug] [Dummy-1   ]: Connection 'model.dbt_project.int_fx_trade_pnl' was properly closed.
+[0m11:22:28.500738 [debug] [Dummy-1   ]: Connection 'model.dbt_project.int_equity_trade_pnl' was properly closed.
+[0m11:22:28.501152 [debug] [Dummy-1   ]: Connection 'model.dbt_project.int_trade_pnl' was properly closed.
+[0m11:22:28.501560 [debug] [Dummy-1   ]: Connection 'model.dbt_project.fct_trader_drivers' was properly closed.
+[0m11:22:28.501966 [debug] [Dummy-1   ]: Connection 'model.dbt_project.fct_pnl_by_desk' was properly closed.
+[0m11:22:28.502398 [debug] [Dummy-1   ]: Connection 'model.dbt_project.fct_pnl_vs_target' was properly closed.
+[0m11:22:28.503129 [info ] [Dummy-1   ]: 
+[0m11:22:28.503735 [info ] [Dummy-1   ]: Finished running 7 dynamic table models, 4 table models in 0 hours 0 minutes and 14.77 seconds (14.77s).
+[0m11:22:28.506307 [debug] [Dummy-1   ]: Command end result
+[0m11:22:28.542559 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt_output/target/manifest.json
+[0m11:22:28.544707 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt_output/target/semantic_manifest.json
+[0m11:22:28.552605 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt_output/target/run_results.json
+[0m11:22:28.553216 [info ] [Dummy-1   ]: 
+[0m11:22:28.553958 [info ] [Dummy-1   ]: [32mCompleted successfully[0m
+[0m11:22:28.554561 [info ] [Dummy-1   ]: 
+[0m11:22:28.555174 [info ] [Dummy-1   ]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 TOTAL=11
+[0m11:22:28.557227 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 18.704767, "process_in_blocks": "0", "process_kernel_time": 1.32, "process_mem_max_rss": "872116", "process_out_blocks": "0", "process_user_time": 8.28}
+[0m11:22:28.557945 [debug] [Dummy-1   ]: Command `cli run` succeeded at 11:22:28.557618 after 18.71 seconds
+[0m11:22:28.558522 [debug] [Dummy-1   ]: Flushing usage events

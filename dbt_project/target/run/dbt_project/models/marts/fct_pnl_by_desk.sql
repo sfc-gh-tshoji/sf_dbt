@@ -2,7 +2,7 @@
         
 
     
-        create dynamic table dbt_hol_2025_prod.public_03_marts.fct_pnl_by_desk
+        create dynamic table dbt_hol_2025_dev.public_03_marts.fct_pnl_by_desk
         target_lag = '1 minute'
         warehouse = VWH_DBT_HOL
         refresh_mode = INCREMENTAL
@@ -11,7 +11,7 @@
 
         as (
             with trade_performance as (
-    select * from dbt_hol_2025_prod.public_02_intermediate.int_trade_pnl
+    select * from dbt_hol_2025_dev.public_02_intermediate.int_trade_pnl
 ),
 
 -- Calculate daily P&L metrics by desk and ticker

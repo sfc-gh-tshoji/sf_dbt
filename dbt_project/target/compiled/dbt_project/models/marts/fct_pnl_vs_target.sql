@@ -1,9 +1,9 @@
 with pnl_by_desk as (
-    select * from dbt_hol_2025_prod.public_03_marts.fct_pnl_by_desk
+    select * from dbt_hol_2025_dev.public_03_marts.fct_pnl_by_desk
 ),
 
 weights as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_weights
+    select * from dbt_hol_2025_dev.public_01_staging.stg_weights
 ),
 
 -- Calculate total portfolio value by desk and region

@@ -2,7 +2,7 @@
   
     
 
-        create or replace transient table dbt_hol_2025_prod.public_01_staging.stg_forex_metrics
+        create or replace transient table dbt_hol_2025_dev.public_01_staging.stg_forex_metrics
          as
         (with source as (
     select * from FOREX_TRACKING_CURRENCY_EXCHANGE_RATES_BY_DAY.STOCK.FOREX_METRICS

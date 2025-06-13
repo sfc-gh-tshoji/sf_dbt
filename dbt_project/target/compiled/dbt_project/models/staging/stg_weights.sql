@@ -1,6 +1,6 @@
 with source as (
     select *
-    from dbt_hol_2025_prod.public.weights_table
+    from dbt_hol_2025_dev.public.weights_table
 ),
 renamed as (
     select region,

@@ -2,7 +2,7 @@
   
     
 
-        create or replace transient table dbt_hol_2025_prod.public_01_staging.stg_stock_metrics
+        create or replace transient table dbt_hol_2025_dev.public_01_staging.stg_stock_metrics
          as
         (with source as (
     select * from STOCK_TRACKING_US_STOCK_PRICES_BY_DAY.STOCK.US_STOCK_METRICS

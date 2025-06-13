@@ -2,7 +2,7 @@
         
 
     
-        create dynamic table dbt_hol_2025_prod.public_02_intermediate.int_extracted_entities
+        create dynamic table dbt_hol_2025_dev.public_02_intermediate.int_extracted_entities
         target_lag = 'downstream'
         warehouse = VWH_DBT_HOL
         refresh_mode = FULL
@@ -13,7 +13,7 @@
             
 
 with trading_books as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_trading_books
+    select * from dbt_hol_2025_dev.public_01_staging.stg_trading_books
 ),
 
 -- Extract sentiment using SNOWFLAKE.CORTEX.SENTIMENT

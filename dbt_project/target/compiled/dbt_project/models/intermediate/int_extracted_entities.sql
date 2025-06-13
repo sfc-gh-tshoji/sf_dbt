@@ -1,7 +1,7 @@
 
 
 with trading_books as (
-    select * from dbt_hol_2025_prod.public_01_staging.stg_trading_books
+    select * from dbt_hol_2025_dev.public_01_staging.stg_trading_books
 ),
 
 -- Extract sentiment using SNOWFLAKE.CORTEX.SENTIMENT

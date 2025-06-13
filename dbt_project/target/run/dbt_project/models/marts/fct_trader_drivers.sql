@@ -2,7 +2,7 @@
         
 
     
-        create dynamic table dbt_hol_2025_prod.public_03_marts.fct_trader_drivers
+        create dynamic table dbt_hol_2025_dev.public_03_marts.fct_trader_drivers
         target_lag = '1 minute'
         warehouse = VWH_DBT_HOL
         refresh_mode = FULL
@@ -13,7 +13,7 @@
             
 
 with extracted_entities as (
-    select * from dbt_hol_2025_prod.public_02_intermediate.int_extracted_entities
+    select * from dbt_hol_2025_dev.public_02_intermediate.int_extracted_entities
 ),
 
 -- Calculate trade driver statistics by trader
