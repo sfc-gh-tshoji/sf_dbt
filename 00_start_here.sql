@@ -56,7 +56,7 @@ EXECUTE IMMEDIATE FROM
 ;
 
 
--- Step 03 Create TASK
+-- Step 03 Create TASK -> GUI で実行可能
 create or replace DBT PROJECT tshoji_db.tshoji_schema.dbt_quickstart 
 from snow://workspace/USER$.PUBLIC."sf_dbt"/versions/live/dbt_project/;
 
